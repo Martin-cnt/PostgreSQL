@@ -8,7 +8,6 @@ async function requireAuth(req, res, next) {
     }
 
     try {
-        // Vérifier que le token est valide
         const result = await pool.query(
             `SELECT 
                 s.utilisateur_id,
