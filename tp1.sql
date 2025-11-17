@@ -188,6 +188,7 @@ WHERE r.nom IN ('admin', 'moderator')
 GROUP BY u.id, u.email
 HAVING COUNT(DISTINCT r.nom) = 2;
 
+
 SELECT
     DATE(date_heure) AS jour,
     COUNT(*) AS tentatives_echouees
